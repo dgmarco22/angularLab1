@@ -1,0 +1,26 @@
+<body>
+
+<section>
+<h1>{{title}}</h1>
+<p>A place to store your todos</p>
+
+<!-- input text for filtering -->
+ <input type= "text" class="filterInput"[(ngModel)]="filter" placeholder="Filter your to-dos" /> 
+
+<ol>   
+      <li  *ngFor="let todo of getFilteredResults()">
+        <span *ngIf="!todo.completed"><button class="completeButton"(click)= "completeTask(todo)">Complete</button></span> 
+        
+        <span [ngClass]="{crossOut: todo.completed}"> {{todo.task}}</span>
+        
+        <span><button class="close"(click)= "removeTask(todo.task)">X</button></span> 
+    </li>
+</ol>
+
+<!--Adding new todo and add button-->
+<input type = "text" class="addInput" placeholder= "Add your to-do" [(ngModel)]="newTodoTask" />
+<p>
+    <button class= "addButton"(click)="addTask(newTodoTask)">Add</button>
+</p> 
+</section>
+</body>

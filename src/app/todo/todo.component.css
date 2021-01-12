@@ -1,0 +1,89 @@
+body{
+   background: linear-gradient(to right, #f857a6, #ff5858);
+   font-weight: 300;
+   font-family: "Open Sans"; 
+   height: 100vh;
+   margin: 0px; 
+   padding-top: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+h1{
+    font-size: 25px;
+}
+section{
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75); 
+    border-radius: 10px;
+    padding-top:10px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom: 10px;
+    
+}
+ol{
+    display: block;
+    position: relative;
+    line-height:200%;
+    font-size: 18px;
+}
+
+.crossOut{
+    text-decoration:line-through;
+}
+/*Filter input field styling */
+.filterInput{
+    color:black;
+    font-size: 18px;
+    width: 98%;
+    border-radius: 5px;
+    border-color:#bbb;
+    height: 25px;
+}
+/*add input field styling */
+.addInput{
+    color: black;
+    font-size: 18px;
+    width: 98%;
+    border-radius: 5px;
+    border-color: #bbb;
+    height: 25px;
+}
+
+.placeholder{
+    color: #bbb;
+}
+
+/* Button styling */
+.completeButton{
+    color: #ff69b4;
+    border-color:#ff69b4 ;
+    background-color: white;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.addButton{
+    width: 99%;
+    height: 30px;
+    font-size: 18px; 
+    background-color: #ff1493;
+    color: white;
+    border-radius: 5px;
+}
+  
+  /* Style the close button */
+  .close {
+    cursor: pointer;
+    float: right;
+    padding-right: 15px; 
+}
+  /* Style the close button when you hover*/
+  .close:hover {
+      background: #eee;
+      padding-left: 10px;
+      padding-right: 10px;
+}
+
